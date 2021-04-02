@@ -1,29 +1,29 @@
 ---
 id: getting-started
-title: Getting Started
+title: Начало работы
 hide_title: true
-sidebar_label: Getting Started
+sidebar_label: Начало работы
 ---
 
-# Getting Started with React Redux
+# Начало работы с React Redux
 
-[React Redux](https://github.com/reduxjs/react-redux) is the official [React](https://reactjs.org/) UI bindings layer for [Redux](https://redux.js.org/). It lets your React components read data from a Redux store, and dispatch actions to the store to update state.
+[React Redux](https://github.com/reduxjs/react-redux) - это официальный слой привязок [React](https://reactjs.org/) UI для [Redux](https://redux.js.org/). Он позволяет вашим компонентам React считывать данные из хранилища Redux и отправлять действия в хранилище для обновления состояния.
 
-## Installation
+## Установка
 
-React Redux 7.1+ requires **React 16.8.3 or later**, in order to make use of React Hooks.
+React Redux 7.1+ требует **React 16.8.3 или новее**, чтобы использовать React Hooks.
 
-### Using Create React App
+### Использование Create React App
 
-The recommended way to start new apps with React Redux is by using the [official Redux+JS template](https://github.com/reduxjs/cra-template-redux) for [Create React App](https://github.com/facebook/create-react-app), which takes advantage of [Redux Toolkit](https://redux-toolkit.js.org/).
+Рекомендуемый способ запуска новых приложений с React Redux - использование [официального шаблона Redux+JS](https://github.com/reduxjs/cra-template-redux) для [Create React App](https://github.com/facebook/create-react-app), который использует [Redux Toolkit](https://redux-toolkit.js.org/) .
 
 ```sh
 npx create-react-app my-app --template redux
 ```
 
-### An Existing React App
+### Существующее приложение React
 
-To use React Redux with your React app, install it as a dependency:
+Чтобы использовать React Redux с вашим приложением React, установите его как зависимость:
 
 ```bash
 # If you use npm:
@@ -33,9 +33,9 @@ npm install react-redux
 yarn add react-redux
 ```
 
-You'll also need to [install Redux](https://redux.js.org/introduction/installation) and [set up a Redux store](https://redux.js.org/recipes/configuring-your-store/) in your app.
+Вам также необходимо [установить Redux](https://redux.js.org/introduction/installation) и [настроить хранилище Redux](https://redux.js.org/recipes/configuring-your-store/) в своем приложении.
 
-If you are using TypeScript, the React Redux types are maintained separately in DefinitelyTyped. You'll need to install those as well:
+Если вы используете TypeScript, типы React Redux поддерживаются отдельно в DefinitherTyped. Вам также необходимо установить их:
 
 ```bash
 npm install @types/react-redux
@@ -43,7 +43,7 @@ npm install @types/react-redux
 
 ## `Provider`
 
-React Redux includes a `<Provider />` component, which makes the Redux store available to the rest of your app:
+React Redux включает компонент `<Provider />`, который делает хранилище Redux доступным для остальной части вашего приложения:
 
 ```js
 import React from 'react'
@@ -63,11 +63,11 @@ ReactDOM.render(
 )
 ```
 
-## Hooks
+## Хуки
 
-React Redux provides a pair of custom React hooks that allow your React components to interact with the Redux store.
+React Redux предоставляет пару настраиваемых перехватчиков React, которые позволяют вашим компонентам React взаимодействовать с хранилищем Redux.
 
-`useSelector` reads a value from the store state and subscribes to updates, while `useDispatch` returns the store's `dispatch` method to let you dispatch actions.
+`useSelector` считывает значение из состояния хранилища и подписывается на обновления, а `useDispatch` возвращает метод хранилища `dispatch`, позволяющий отправлять действия.
 
 ```js
 import React from 'react'
@@ -110,12 +110,12 @@ export function Counter() {
 }
 ```
 
-## Help and Discussion
+## Помощь и обсуждение
 
 The **[#redux channel](https://discord.gg/0ZcbPKXt5bZ6au5t)** of the **[Reactiflux Discord community](http://www.reactiflux.com)** is our official resource for all questions related to learning and using Redux. Reactiflux is a great place to hang out, ask questions, and learn - come join us!
 
 You can also ask questions on [Stack Overflow](https://stackoverflow.com) using the **[#redux tag](https://stackoverflow.com/questions/tagged/redux)**.
 
-## Docs Translations
+## Переводы документации
 
 - [Portuguese](https://fernandobelotto.github.io/react-redux)

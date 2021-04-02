@@ -2,7 +2,7 @@ module.exports = {
   docs: [
     {
       type: 'category',
-      label: 'Introduction',
+      label: 'Введение',
       collapsed: false,
       items: [
         'introduction/getting-started',
@@ -11,13 +11,13 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Tutorials',
+      label: 'Учебники',
       collapsed: false,
       items: ['tutorials/connect']
     },
     {
       type: 'category',
-      label: 'Using React Redux',
+      label: 'Использование React Redux',
       collapsed: false,
       items: [
         'using-react-redux/usage-with-typescript',
@@ -28,7 +28,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'API Reference',
+      label: 'Справочник по API',
       items: [
         'api/provider',
         'api/hooks',
@@ -39,7 +39,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Guides',
+      label: 'Путеводители',
       items: ['troubleshooting']
     }
   ]
