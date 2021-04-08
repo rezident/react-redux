@@ -7,34 +7,34 @@ hide_title: true
 
 # `Provider`
 
-## Overview
+## Обзор
 
-The `<Provider>` component makes the Redux `store` available to any nested components that need to access the Redux store.
+Компонент `<Provider>` делает хранилище (`store`) Redux доступным для любых вложенных компонентов, которым необходим доступ к хранилищу Redux.
 
-Since any React component in a React Redux app can be connected to the store, most applications will render a `<Provider>` at the top level, with the entire app’s component tree inside of it.
+Поскольку любой компонент React в приложении React Redux может быть подключен к хранилищу, большинство приложений будут рендерить `<Provider>` на верхнем уровне со всем деревом компонентов приложения внутри него.
 
-The [Hooks](./hooks.md) and [`connect`](./connect.md) APIs can then access the provided store instance via React's Context mechanism.
+Затем API-интерфейсы [Hooks](./hooks.md) и [`connect`](./connect.md) могут получить доступ к предоставленному экземпляру хранилища через механизм контекста React.
 
 ### Props
 
-`store` ([Redux Store](https://redux.js.org/api/store))
-The single Redux `store` in your application.
+`store` ([Хранилище Redux](https://redux.js.org/api/store))
+Единое хранилище (`store`) Redux в вашем приложении.
 
 `children` (ReactElement)
-The root of your component hierarchy.
+Корень вашей иерархии компонентов.
 
 `context`
-You may provide a context instance. If you do so, you will need to provide the same context instance to all of your connected components as well. Failure to provide the correct context results in runtime error:
+Вы можете предоставить экземпляр контекста. Если вы это сделаете, вам нужно будет предоставить один и тот же экземпляр контекста для всех подключенных компонентов. Отсутствие правильного контекста приводит к ошибке выполнения:
 
-> Invariant Violation
+> Инвариантное нарушение
 >
-> Could not find "store" in the context of "Connect(MyComponent)". Either wrap the root component in a `<Provider>`, or pass a custom React context provider to `<Provider>` and the corresponding React context consumer to Connect(Todo) in connect options.
+> Не удалось найти "store" в контексте "Connect(MyComponent)". Либо оберните корневой компонент в `<Provider>`, либо передайте настраиваемого поставщика контекста React в `<Provider>` и соответствующего потребителя контекста React в Connect(Todo) в параметрах подключения.
 
 
 
-### Example Usage
+### Пример использования
 
-In the example below, the `<App />` component is our root-level component. This means it’s at the very top of our component hierarchy.
+В приведенном ниже примере компонент `<App />` - это наш компонент корневого уровня. Это означает, что он находится на самом верху нашей иерархии компонентов.
 
 
 ```jsx
