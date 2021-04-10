@@ -11,15 +11,15 @@ hide_title: true
 connectAdvanced(selectorFactory, connectOptions?)
 ```
 
-Connects a React component to a Redux store. It is the base for `connect()` but is less opinionated about how to combine `state`, `props`, and `dispatch` into your final props. It makes no assumptions about defaults or memoization of results, leaving those responsibilities to the caller.
+Подключает компонент React к хранилищу Redux. Это основа для `connect()`, но он менее категоричен в отношении того, как объединить `state`, `props` и `dispatch` в ваши окончательные свойства. Он не делает никаких предположений о значениях по умолчанию или запоминании результатов, оставляя эти обязанности вызывающей стороне.
 
-It does not modify the component class passed to it; instead, it _returns_ a new, connected component class for you to use.
+Он не изменяет переданный ему класс компонента; вместо этого он _возвращает_ новый, связанный класс компонентов, который вы можете использовать.
 
-Most applications will not need to use this, as the default behavior in `connect` is intended to work for most use cases.
+Большинству приложений это не нужно, так как поведение по умолчанию в `connect` предназначено для большинства случаев использования.
 
 :::info
 
-`connectAdvanced` was added in version 5.0, and `connect` was reimplemented as a specific set of parameters to `connectAdvanced`.  However, [**`connectAdvanced` is now deprecated**](https://github.com/reduxjs/react-redux/issues/1236) and will eventually be removed in a future major version of React Redux.
+`connectAdvanced` был добавлен в версии 5.0, а `connect` был переопределен как определенный набор параметров для `connectAdvanced`. Однако [**`connectAdvanced` в настоящее время устарел**](https://github.com/reduxjs/react-redux/issues/1236) и в конечном итоге будет удален в будущей основной версии React Redux.
 
 :::
 
